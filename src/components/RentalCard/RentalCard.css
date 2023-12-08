@@ -1,0 +1,60 @@
+/* .RentalCard img {
+    height: 160px;
+    object-fit: cover;
+} */
+
+
+.Link {
+    color: white
+}
+
+.card-container {
+    width: 14rem !important;
+    height: 400px !important;
+    margin-bottom: 10px !important;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    overflow-y: auto !important;
+}
+
+.card-header {
+    font-size: 15px !important;
+    font-family: 'Raleway', sans-serif !important;
+    text-align: left;
+}
+
+.card-title {
+    margin-bottom: 0.5rem !important;
+}
+
+.card-content {
+    max-height: 200px !important;
+    overflow-y: auto !important;
+}
+
+.card-img {
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: cover;
+}
+
+.button {
+    background-color: #FFB54A !important;
+    color: #000000 !important;
+    font-family: 'Raleway', sans-serif !important;
+    padding: 4px 16px !important;
+    border: 1px solid #211d1d !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    text-decoration: none !important;
+}
+
+
+.btn {
+    text-decoration-color: aliceblue;
+
+}

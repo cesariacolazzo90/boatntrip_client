@@ -1,0 +1,28 @@
+ .App {
+
+     font-size: 18px;
+     font-weight: bold;
+     text-align: center;
+     background-blend-mode: soft-light;
+     background-position: absolute !important;
+     background-repeat: no-repeat;
+     background-size: cover !important;
+     font-family: 'Times New Roman';
+     height: 100vh;
+
+
+ }
+
+ body,
+ html {
+     height: 100%;
+     margin: 0;
+     padding: 0
+ }
+
+ .colorButton {
+     background-color: #66cdaa;
+     color: black;
+     text-decoration: none;
+
+ }
