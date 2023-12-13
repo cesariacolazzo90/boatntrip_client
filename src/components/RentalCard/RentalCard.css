@@ -8,15 +8,15 @@
     color: white
 }
 
-.card-container {
+/* .card-container {
     width: 14rem !important;
     height: 400px !important;
     margin-bottom: 10px !important;
-}
+} */
 
 .card {
     background-color: rgba(255, 255, 255, 0.3) !important;
-    overflow-y: auto !important;
+    /* overflow-y: auto !important; */
 }
 
 .card-header {
@@ -29,10 +29,10 @@
     margin-bottom: 0.5rem !important;
 }
 
-.card-content {
+/* .card-content {
     max-height: 200px !important;
     overflow-y: auto !important;
-}
+} */
 
 .card-img {
     width: 100% !important;

@@ -91,10 +91,10 @@ const UserDetailsPage = () => {
 
                                     <Link to="/gallery" className="btn btn-dark">Go back to gallery</Link>
                                     {loggedUser._id === user._id &&
-                                        <Link to={`/edit_user/${user_id}`} p-class className="colorButton"> Modify user profile</Link>}
+                                        <Link to={`/edit_user/${user_id}`} p-class className="colorButton" style={{ color: 'white', textDecoration: 'none' }}> Modify user profile</Link>}
                                     <ButtonGroup>
                                         {loggedUser._id === user._id &&
-                                            <Button variant="danger" size="lg" className="ms-2" onClick={deleteUserSubmit}>Delete</Button>}
+                                            <Button variant="danger" size="lg" className="ms-2" style={{ color: 'white', textDecoration: 'none' }} onClick={deleteUserSubmit}>Delete</Button>}
                                     </ButtonGroup>
 
                                 </div>

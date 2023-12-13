@@ -15,7 +15,7 @@ const NewRentalForm = () => {
         city: '',
         description: '',
         // location: '',
-        imageUrl: '',
+        imageUrl: 'https://www.tessllc.us/wp-content/uploads/2020/07/yacht-post-825x510.jpg',
         price: '',
         boatType: "",
         role: ''

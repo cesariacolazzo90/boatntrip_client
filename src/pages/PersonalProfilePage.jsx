@@ -132,7 +132,7 @@ const PersonalProfile = () => {
 
                                     <div className="d-grid">
 
-                                        <Link to="/gallery" className="btn btn-dark my-2">Find travel peers!</Link>
+                                        <Link to="/allusers" className="btn btn-dark my-2">Find travel peers!</Link>
                                         <Link to="/placeabooking" className="btn btn-dark my-2">Reserve the trip of your dreams now</Link>
                                         <Link to="/newrental" className="btn btn-dark my-2">Offer to host travellers now</Link>
 
