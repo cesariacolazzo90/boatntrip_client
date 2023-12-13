@@ -34,7 +34,7 @@ const AppRoutes = () => {
 
 
                 <Route path={'/profile'} element={<PersonalProfile />} />
-                <Route path={'/editMyProfile'} element={<EditPersonalProfile />} />
+                <Route path={'/editmyprofile'} element={<EditPersonalProfile />} />
 
                 <Route path={'/user/:user_id'} element={<UserDetailPage />} />
                 <Route path={'/edit_user/:user_id'} element={<EditUserDetail />} />
