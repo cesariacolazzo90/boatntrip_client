@@ -136,13 +136,9 @@ const PersonalProfile = () => {
                                         <Link to="/placeabooking" className="btn btn-dark my-2">Reserve the trip of your dreams now</Link>
                                         <Link to="/newrental" className="btn btn-dark my-2">Offer to host travellers now</Link>
 
-                                        <ButtonGroup>
+                                        
 
-
-                                            <Button variant="dark" size="lg" className="ms-2 my-2" onClick={EditUserSubmit}>
-                                                <Link to={'/editMyProfile'} style={{ color: 'white', textDecoration: 'none' }}>edit my profile</Link>
-                                            </Button>
-                                        </ButtonGroup>
+                                            
 
                                         <ButtonGroup>
 
