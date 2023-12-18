@@ -14,8 +14,7 @@ const PlaceBooking = () => {
         date: '',
         city: '',
         description: '',
-        // location: '',
-        imageUrl: '',
+        // imageUrl: '',
         price: '',
 
 
@@ -44,21 +43,21 @@ const PlaceBooking = () => {
 
 
 
-    const handleFileUpload = e => {
+    // const handleFileUpload = e => {
 
-        setLoadingImage(true)
-        const formData = new FormData()
-        formData.append('imageData', e.target.files[0])
+    //     setLoadingImage(true)
+    //     const formData = new FormData()
+    //     formData.append('imageData', e.target.files[0])
 
-        uploadServices
-            .uploadimage(formData)
+    //     uploadServices
+    //         .uploadimage(formData)
 
-            .then(res => {
-                setRentalData({ ...rentalData, imageUrl: res.data.cloudinary_url })
-                setLoadingImage(false)
-            })
-            .catch(err => console.log(err))
-    }
+    //         .then(res => {
+    //             setRentalData({ ...rentalData, imageUrl: res.data.cloudinary_url })
+    //             setLoadingImage(false)
+    //         })
+    //         .catch(err => console.log(err))
+    // }
 
 
 
@@ -88,24 +87,24 @@ const PlaceBooking = () => {
                             <Form.Control type="text" value={rentalData.description} name="description" onChange={handleInputChange} />
                         </Form.Group>
 
-                        <Form.Group className="mb-3" controlId="description">
+                        <Form.Group className="mb-3" controlId="price">
                             <Form.Label>Price per day </Form.Label>
                             <Form.Control type="text" value={rentalData.price} name="price" onChange={handleInputChange} />
                         </Form.Group>
 
 
-                        <Form.Group className="mb-3" controlId="description">
+                        <Form.Group className="mb-3" controlId="boatType">
                             <Form.Label> Type of boat you arwe looking for </Form.Label>
                             <Form.Control type="text" value={rentalData.boatType} name="boatType" onChange={handleInputChange} />
                         </Form.Group>
                     </Col>
 
                     <Col>
-                        <Form.Group className="mb-3" controlId="imageUrl">
+                        {/* <Form.Group className="mb-3" controlId="imageUrl">
                             <Form.Label>Insert your picture. Let us know you a  little bit.</Form.Label>
                             <Form.Control type="file" name="imageUrl" id="fileInput" onChange={handleFileUpload} />
 
-                        </Form.Group>
+                        </Form.Group> */}
                     </Col>
                 </Row>
 

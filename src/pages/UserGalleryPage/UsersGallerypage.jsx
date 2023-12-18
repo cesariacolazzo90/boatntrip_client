@@ -44,8 +44,7 @@ const UserGalleryPage = () => {
                 <hr></hr>
                 <UserSearchBar usersFiltered={usersFiltered} loadUsers={loadUsers} />
                 <UsersList users={users} />
-                {/* <SortByPrice /> */}
-                <filterByPrice />
+                 
             </Container>
         </div>
     )
