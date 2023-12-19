@@ -1,11 +1,8 @@
 import { useContext, useEffect, useState } from "react"
 import rentalServices from "../../services/rental.services"
 import { useParams, Link, useNavigate } from "react-router-dom"
-import { Container, Row, Col, Button, ButtonGroup, Form } from "react-bootstrap"
-import { AuthContext } from "../../context/auth.context"
+import {  Row, Col, Button,  Form } from "react-bootstrap"
 import uploadServices from './../../services/upload.services'
-// import authService from "../../services/auth.services"
-// import userService from "../../services/user.services"
 
 
 
@@ -115,7 +112,7 @@ const EditRentalDetail = () => {
                         </Form.Group>
                     </Col>
                 </Row>
-                {/* {errors.length > 0 && <FormError>{errors.map(elm => <p>(elm)</p>)}</FormError>} */}
+              
                 <div className="d-grid">
                     <Button variant="dark" type="submit" style={{ backgroundColor: '#66cdaa' }} > Modify the trip</Button>
                 </div>

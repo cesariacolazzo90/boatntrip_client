@@ -1,12 +1,6 @@
-import { Container, Form } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
-// import { useState } from "react"
-
-// import uploadServices from './../../services/upload.services'
-// import rentalServices from './../../services/rental.services'
-// import { useNavigate } from "react-router-dom"
-// import FormError from "../FormError/FormError"
 const Homepage = () => {
 
 
@@ -25,6 +19,6 @@ const Homepage = () => {
 
 
 
-// "btn btn-dark p-2
+
 
 export default Homepage

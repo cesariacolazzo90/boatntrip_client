@@ -1,4 +1,4 @@
-import { Card, Button, Col } from "react-bootstrap"
+import { Card,  Col } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import './UserCard.css'
 
@@ -13,7 +13,7 @@ const UserCard = ({ _id, name, email, role, imageUrl, city }) => {
         <Col lg={{ span: 3 }} md={{ span: 6 }}>
             <article className='mb-3'>
                 <Card>
-                    {/* <Card.Img variant="top" src="" /> */}
+                    
                     <Card.Body>
                         <Card.Title>Name:{name}</Card.Title>
                         <Card.Title>Email:{email}</Card.Title>

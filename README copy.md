@@ -1,4 +1,4 @@
-SERVIDOR
+SERVER
 
 | VERB   | URI PATH             | DESCRIPTION                       |
 | ------ | -------------------- | --------------------------------- |
@@ -17,7 +17,7 @@ SERVIDOR
 | DELETE | `/delete/:user_id/`  | Delete a user                     |
 | GET    | `/profile`           | logged user detail                |
 
-CLIENTE
+CLIENT
 
 | URI PATH              | DESCRIPTION                | PROTECTED |
 | --------------------- | -------------------------- | --------- |

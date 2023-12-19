@@ -3,7 +3,6 @@ import { Form, Button, Row, Col } from "react-bootstrap"
 import uploadServices from './../../services/upload.services'
 import rentalServices from './../../services/rental.services'
 import { useNavigate } from "react-router-dom"
-import FormError from "../FormError/FormError"
 
 const NewRentalForm = () => {
     const navigate = useNavigate()
@@ -14,7 +13,7 @@ const NewRentalForm = () => {
         date: '',
         city: '',
         description: '',
-        // imageUrl: 'https://www.tessllc.us/wp-content/uploads/2020/07/yacht-post-825x510.jpg',
+        imageUrl: 'https://www.tessllc.us/wp-content/uploads/2020/07/yacht-post-825x510.jpg',
         price: '',
         boatType: "",
         role: ''
@@ -39,27 +38,27 @@ const NewRentalForm = () => {
                 navigate('/gallery')
             })
 
-        // .catch(err => setErrors(err.response.data.errorMessages))
+        
     }
 
 
 
 
-    // const handleFileUpload = e => {
+    const handleFileUpload = e => {
 
-    //     setLoadingImage(true)
-    //     const formData = new FormData()
-    //     formData.append('imageData', e.target.files[0])
+        setLoadingImage(true)
+        const formData = new FormData()
+        formData.append('imageData', e.target.files[0])
 
-    //     uploadServices
-    //         .uploadimage(formData)
+        uploadServices
+            .uploadimage(formData)
 
-    //         .then(res => {
-    //             setRentalData({ ...rentalData, imageUrl: res.data.cloudinary_url })
-    //             setLoadingImage(false)
-    //         })
-    //         .catch(err => console.log(err))
-    // }
+            .then(res => {
+                setRentalData({ ...rentalData, imageUrl: res.data.cloudinary_url })
+                setLoadingImage(false)
+            })
+            .catch(err => console.log(err))
+    }
 
 
 
@@ -102,16 +101,16 @@ const NewRentalForm = () => {
                     </Col>
 
                     <Col>
-                        {/* <Form.Group className="mb-3" controlId="imageUrl">
+                        <Form.Group className="mb-3" controlId="imageUrl">
                             <Form.Label>Insert here the picture of your boat</Form.Label>
                             <Form.Control type="file" name="imageUrl" id="fileInput" onChange={handleFileUpload} />
 
-                        </Form.Group> */}
+                        </Form.Group>
                     </Col>
                 </Row>
 
                 <div className="d-grid">
-                    <Button variant="dark" type="submit" style={{ backgroundColor: '#66cdaa' }} disabled={loadingImage}>{loadingImage ? { loadingImage } : "Place you rental now"}</Button>
+                    <Button variant="dark" type="submit" style={{ backgroundColor: '#66cdaa' }} > Place you rental now</Button>
                 </div>
             </Form>
         </div>

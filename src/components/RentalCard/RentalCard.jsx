@@ -1,8 +1,6 @@
 import { Card, Button, Col, Container } from "react-bootstrap"
 import './RentalCard.css'
 import { Link } from "react-router-dom"
-import { useState } from "react"
-import rentalServices from "../../services/rental.services"
 
 
 
@@ -33,7 +31,6 @@ const RentalCard = ({ _id, title, city, imageUrl, dueno, participants, date, boa
                             <Card.Body className=" flex-column">
                                 <Card.Header className="text-start"> {title}</Card.Header>
                                 <Card.Text className="mb-2"> Location : {city}</Card.Text>
-                                <Card.Text className="mb-2"> Owner name : {dueno}</Card.Text>
                                 <Card.Text className="mb-2"> Date: {formatDate(date)}</Card.Text>
                                 <Card.Text className="mb-2"> Organized by : {dueno}</Card.Text>
                                 <Card.Text className="mb-2"> Boat: {boatType}</Card.Text>

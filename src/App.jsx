@@ -4,7 +4,7 @@ import AppRoutes from './routes/AppRoutes'
 import Navigation from '../src/components/Navigation/Navigation'
 
 
-// TODO: REVISAR LAS EXPRESIONES, CLASES Y NOMBRES EN CASTELLANO
+
 function App() {
 
   return (

@@ -8,7 +8,7 @@ const UserSearchBar = ({ usersFiltered, loadUsers }) => {
 
 
     const [searchValue, setSearchValue] = useState("")
-    // const [value, setValue] = useState([])
+    
 
     const handleInputChange = (event) => {
         const { value } = event.target
@@ -43,7 +43,7 @@ const UserSearchBar = ({ usersFiltered, loadUsers }) => {
 
     return (
         <div className="search-bar">
-            {/* <img src={pointer} alt="" style={{ with: '20px', height: '20px', paddingLeft: '10px' }} /> */}
+            
             <input type="text" placeholder="Search users by City" value={searchValue} name="city" onChange={handleInputChange} />
         </div>
 

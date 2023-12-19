@@ -12,7 +12,7 @@ import PrivateRoute from './PrivateRoute'
 import EditUserDetail from '../pages/EditUserDetailPage/EditUserDetailsPage'
 import PersonalProfile from '../pages/PersonalProfilePage'
 import PlaceBooking from '../pages/PlaceBookingOffer/PlaceBookingOffer'
-import EditPersonalProfile from '../pages/EditPersonalProfile/EditPersonalProfile'
+
 
 
 

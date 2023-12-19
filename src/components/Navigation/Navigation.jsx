@@ -1,6 +1,6 @@
 
-import { Nav, Navbar, Container } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom'
+import { Nav, Navbar} from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 import { AuthContext } from '../../context/auth.context';
 import { useContext } from 'react';
 import logo from './../../assets/logo.png'

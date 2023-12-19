@@ -16,7 +16,8 @@ const EditUserDetail = () => {
         name: '',
         email: '',
         imageUrl: '',
-        city: ''
+        city: '',
+        bankAccount :''
     });
 
     useEffect(() => {
@@ -40,12 +41,12 @@ const EditUserDetail = () => {
 
     const handleFormSubmit = e => {
         e.preventDefault()
-        console.log("USER YA EDITADO", user)
+        
         userService
             .editUser(user_id, user)
             .then(() => {
                 navigate(`/allusers`)
-                console.log("SE HA EDITADOOOOO!!")
+                
             })
             .catch(err => console.log(err))
     }
@@ -88,10 +89,22 @@ const EditUserDetail = () => {
                     <Form.Control type="text" value={user.name} name="name" onChange={handleInputChange} />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="date">
+                <Form.Group className="mb-3" controlId="email">
                     <Form.Label>Email</Form.Label>
                     <Form.Control type="email" value={user.email} name="email" onChange={handleInputChange} />
                 </Form.Group>
+
+
+                 <Form.Group className="mb-3" controlId="city">
+                    <Form.Label>City</Form.Label>
+                    <Form.Control type="text" value={user.city} name="city" onChange={handleInputChange} />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="city">
+                    <Form.Label>Bank Account </Form.Label>
+                    <Form.Control type="text" value={user.bankAccount} name="city" onChange={handleInputChange} />
+                </Form.Group>
+
+
 
                 <Row>
                     
@@ -105,37 +118,12 @@ const EditUserDetail = () => {
                         </Form.Group>
                     </Col>
                 </Row>
+                
                
                 <div className="d-grid">
                     <Button variant="dark" type="submit" style={{ backgroundColor: '#66cdaa' }} > Modify your information</Button>
                 </div>
-            {/* </Form> */}
-        {/* </div>
-        <> */}
-            {/* <h2>Edit here your profile</h2>
-            <div className="Edit Form" >
-                <Form onSubmit={handleFormSubmit}>
-                    Name: <input type="text" value={user.name} onChange={handleInputChange} name="name" />
-                    <br /><br />
-
-                    email: <input type="text" value={user.email} onChange={handleInputChange} name="email" />
-                    <br /><br />
-                    Profile Image: <input type="file" onChange={handleFileUpload} name="imageUrl" />
-                    <br /><br />
-                    <Form.Group className="mb-3" controlId="imageUrl">
-                            <Form.Label>Change your picture </Form.Label>
-                            <Form.Control type="file" name="imageUrl" id="fileInput" onChange={handleFileUpload} />
-
-                        </Form.Group>
-                    City : <input type="text" value={user.city} onChange={handleInputChange} name="city" />
-                    <br /><br />
-                   
-
-
-
-
-
-                    <input type="submit" value="Save" /> */}
+            
                 </Form>
             </div>
         

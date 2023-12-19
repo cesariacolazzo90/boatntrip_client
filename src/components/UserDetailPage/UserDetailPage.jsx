@@ -2,7 +2,6 @@ import { useContext, useEffect, useState } from "react"
 import { useParams, Link, useNavigate } from "react-router-dom"
 import { Container, Row, Col, Button, ButtonGroup, Card } from "react-bootstrap"
 import { AuthContext } from "../../context/auth.context"
-import authService from "../../services/auth.services"
 import userService from "../../services/user.services"
 import rentalServices from "../../services/rental.services"
 
@@ -25,7 +24,7 @@ const UserDetailsPage = () => {
     }, [])
 
     const loadUserDetails = () => {
-        console.log("soy el ID", user_id)
+       
         userService
             .getUserDetails(user_id)
             .then(({ data }) => setUser(data))
@@ -35,7 +34,7 @@ const UserDetailsPage = () => {
     const loadUserRentals = () => {
         rentalServices.getRentalByOwner(user_id)
             .then(({ data }) => {
-                console.log("estoy aqui", data)
+                
                 setRentals(data)
             }
             )
@@ -63,7 +62,7 @@ const UserDetailsPage = () => {
 
                 <Col lg={{ span: 12, offset: 1 }} md={{ span: 12, offset: 1 }}>
                     <article className='mb-3'>
-                        <Card className="tarjeta">
+                        <Card className="card">
                             {/* <Card.Img variant="top" src="" /> */}
                             <Card.Body>
                                 <Card.Title>Name:{user.name}</Card.Title>
@@ -71,19 +70,7 @@ const UserDetailsPage = () => {
                                 <Card.Body>Role:{user.role}</Card.Body>
                                 <Card>
                                     <Card.Img variant="top" src={user.imageUrl} alt="Profile Picture" />
-                                    <Card.Body>
-                                        <p>Trips to attend: {rentals.map((elm, index) => (
-
-
-                                            <ul >
-                                                <li>
-                                                    {elm.title}
-                                                </li>
-                                            </ul>
-
-                                        )
-                                        )}</p>
-                                    </Card.Body>
+                                    
                                 </Card>
 
 
@@ -102,14 +89,6 @@ const UserDetailsPage = () => {
                         </Card>
                     </article>
                 </Col>
-
-
-
-
-
-
-
-
 
 
 

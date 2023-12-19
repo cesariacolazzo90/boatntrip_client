@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Form, Button, FormGroup, FormLabel } from "react-bootstrap"
+import { Form, Button } from "react-bootstrap"
 import authService from "../../services/auth.services"
 import { useNavigate } from "react-router-dom"
 
@@ -9,7 +9,7 @@ const SignupForm = () => {
         name: '',
         email: '',
         password: '',
-        // role: ''
+        
     })
 
     const handleInputChange = e => {
@@ -50,27 +50,7 @@ const SignupForm = () => {
             </Form.Group>
 
 
-            {/* <Form.Group>
-                <Form.Label>Are you a boat owner or a tourist?</Form.Label>
-                <Form.Control type="role" value={signupData.role} onChange={handleInputChange} name="role" />
-            </Form.Group> */}
-            {/* <Form.Select
-                    aria-label="Default select example"
-                    onChange={handleInputChange}
-                    name="role"
-                    value={signupData.role}
-                    className="selectRole">
-
-                    <option className="selectionText" disabled>Select</option>
-                    <option value="boatOwner" className="optionsRole">
-                        Boat owner
-                    </option>
-                    <option value="tourist" className="optionsRole">
-                        Tourist
-                    </option> 
-                 </Form.Select> */}
-
-            {/* </FormGroup> */}
+           
 
 
             <div className="d-grid">

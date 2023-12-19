@@ -1,8 +1,8 @@
 
-import { Button, Container } from 'react-bootstrap'
-import { useContext, useEffect, useState } from 'react'
+import {  Container } from 'react-bootstrap'
+import {  useEffect, useState } from 'react'
 import userService from '../../services/user.services'
-import UsersList from '../../components/User List/Userlist'
+import UsersList from '../../components/UserList/Userlist'
 import UserSearchBar from '../../components/UserSearchBar/UserSearchBar'
 
 const UserGalleryPage = () => {

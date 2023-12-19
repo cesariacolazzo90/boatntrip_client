@@ -8,8 +8,7 @@ import SearchBar2 from '../../components/SearchBar2/SearchBar2'
 const RentalsGalleryPage = () => {
 
     const [rentals, setRentals] = useState()
-    const [refreshedRentals, setRefreshedRentals] = useState(rentals)
-
+    
 
 
 
@@ -89,7 +88,7 @@ const RentalsGalleryPage = () => {
                 <h1>Explore  the latest boat rentals</h1>
                 <SearchBar rentalsFiltered={rentalsFiltered} loadRentals={loadRentals} />
                 <SearchBar2 rentalsFiltered2={rentalsFiltered2} loadRentals={loadRentals} />
-                <Link to={'/newrental'} className='btn'>Rent now a boat </Link>
+                <Link to={'/newrental'} className='btn-btn-primary'>Rent now a boat </Link>
                 <RentalsList rentals={rentals} />
             </Container>
         </div >
