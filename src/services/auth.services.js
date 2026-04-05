@@ -25,8 +25,11 @@ class AuthService {
     }
 
     login(userData) {
+        console.log("VITE_API_URL:", import.meta.env.VITE_API_URL);
+        console.log("LOGIN URL:", `${import.meta.env.VITE_API_URL}/api/auth/login`);
 
         return this.api.post('/login', userData)
+        
     }
 
     verify(authToken) {
