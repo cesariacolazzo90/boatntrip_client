@@ -4,7 +4,7 @@ class AuthService {
 
     constructor() {
         this.api = axios.create({
-            baseURL: `${import.meta.env.VITE_API_URL}/auth`
+            baseURL: `${import.meta.env.VITE_API_URL}api/auth`
         })
 
         this.api.interceptors.request.use((config) => {
